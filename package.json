@@ -7,7 +7,7 @@
     "start:react": "cd client && npm run start",
     "start:express": "node ./server/index.js",
     "start": "concurrently \"npm run start:express\" \"npm run start:react",
-    "postinstall": "cd client && npm install && cd .. && cd server && npm install"
+    "postinstall": "concurrently \"cd client && npm install\" \"cd server && npm install"
   },
   "repository": {
     "type": "git",
