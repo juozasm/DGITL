@@ -1,0 +1,31 @@
+.Modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    .modal-overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 9998;
+        background-color: rgba(0, 0, 0, 0.75);
+    }
+    .modal-container {
+        position: relative;
+        z-index: 9999;
+    }
+    .results-modal {
+        padding: 50px;
+        display: flex;
+        font-size: 24px;
+        align-items: center;
+        background-color: #ffffff;
+        margin: 200px auto 0 auto;
+        width: 600px;
+        height: 200px;
+        justify-content: space-between;
+    }
+}
